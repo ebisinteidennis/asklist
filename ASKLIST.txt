@@ -4,3 +4,15 @@ git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/prrat/asklist.git
 git push -u origin main
+
+
+heroku upload::
+1.heroku git:remote -a asklist
+2. pip install gunicorn whitenoise 
+3. pip freeze > requirements.txt
+4. runtime.txt - python-3.8.1
+5.Procfile *note: donot link .txt to it*
+	web: gunicorn todo_list.wsgi --log-file -
+
+6.ALLOWED_HOSTS = ['127.0.0.1`, 'asklist.herokuapp.com']
+7. whitenoise.middleware.WhiteNoiseMiddleware
