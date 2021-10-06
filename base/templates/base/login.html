@@ -4,7 +4,8 @@
 <div class="header-bar">
     <h1>Login</h1>
 </div>
-
+<center><h2>Asklist</h2></center>
+<center><h3>Keep track of all Task</h4></center>
 <div class="card-body">
     <form method="POST">
         {% csrf_token %}
@@ -13,10 +14,6 @@
     </form>
     <p>Don't have an account? <a href="{% url 'register' %}">Register</a></p>
 </div>
-
-
-
-
 
 
 {% endblock content %}

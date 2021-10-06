@@ -1,15 +1,21 @@
 {% extends 'base/main.html' %}
 {% block content %}
 
+  
+
 <div class="header-bar">
     <h1>Register</h1>
 </div>
-
+<center><h2>Asklist</h2></center>
+<center><h4>Keep track of all Task</h4></center>
 <div class="card-body">
     <form method="POST">
         {% csrf_token %}
         <label>{{form.username.label}}</label>
         {{form.username}}
+
+        <label>{{form.email.label}}</label>
+        {{form.email}}
 
         <label>{{form.password1.label}}</label>
         {{form.password1}}
