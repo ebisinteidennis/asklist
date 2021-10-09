@@ -16,10 +16,12 @@ heroku upload::
 	web: gunicorn todo_list.wsgi --log-file -
 
 6.ALLOWED_HOSTS = ['127.0.0.1`, 'asklist.herokuapp.com']
-7. whitenoise.middleware.WhiteNoiseMiddleware
+7. whitenoise.middleware.Whit eNoiseMiddleware
 
 Disable and Enable Static files in heroku
 Note: Static files include img, js, css, not html
 
 $heroku config:set DISABLE_COLLECTSTATIC=1 = disable
 $heroku config:set COLLECTSTATIC=1 = enable
+
+google Adsense Added to site.
